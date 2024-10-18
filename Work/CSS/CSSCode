@@ -1,89 +1,89 @@
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b83f53;
+    color: #000000;
 }
 
 .container {
-    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
-/* Header */
 .header {
-    background-color: #ff6b6b;
-    padding: 20px;
     text-align: center;
+    padding: 20px 0;
+    background-color: #ff6b6b;
     color: white;
 }
 
 .header h1 {
-    margin: 0;
+    font-size: 2.5rem;
 }
 
-/* Navigation */
 .nav {
     display: flex;
     justify-content: center;
-    background-color: #ff4c4c;
-    padding: 10px 0;
+    margin-bottom: 20px;
 }
 
-.nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
+.nav .button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
 }
 
-.nav a:hover {
-    text-decoration: underline;
+.nav img {
+    border-radius: 20%;
+    width: 100px;
+    height: 100px;
 }
 
-/* Profile Cards */
-.profile-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    padding: 15px;
+main {
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
 }
 
 .profile-card img {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    margin-right: 15px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .profile-card h2 {
-    margin: 0;
+    font-size: 1.8rem;
+    margin: 10px 0;
 }
 
-/* Buttons */
-.button {
-    background-color: #ff6b6b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.profile-card p {
+    font-size: 1.2rem;
+    color: #000000;
 }
 
-.button:hover {
-    background-color: #ff4c4c;
+.profile-card .button {
+    border-color: white;
+    margin: 0px;
+    border-radius: 50%;
 }
 
-/* Footer */
 .footer {
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     background-color: #ff6b6b;
     color: white;
     position: relative;
