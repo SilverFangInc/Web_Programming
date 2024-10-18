@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dating App</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>PawSwipe</h1>
+        </header>
+        <nav class="nav">
+            <a href="#"><button class="button"><img src="https://i.pinimg.com/736x/fb/a0/06/fba006bef8674825227b8210cb3d50f1.jpg" alt="Home" style="width: 100px; height 100px;"></button></a> 
+            <a href="#"><button class="button"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkabSBxAyGhJmjKnEIZchzkbtYKmOYuI2htQ&s" alt="Leadershipboard" style="width: 100px; height 100px;"></button></a> 
+            <a href="#"><button class="button"><img src="https://i.pinimg.com/564x/e4/f2/ea/e4f2ea3111437c52810ad405829097d2.jpg" alt="Settings" style="width: 100px; height 100px;"></button></a> 
+        </nav>
+        <main>
+            <div class="profile-card">
+                <img src="profile1.jpg" alt="Profile Picture">
+                <div>
+                    <h2>Jane Doe</h2>
+                    <p>25, New York</p>
+                    <button class="button"><img src="https://img.freepik.com/premium-vector/cute-pink-heart-icon-flat-vector-illustration_91515-64.jpg" alt="Like" style="width: 100px; height 100px;"></button>
+                    <button class="button"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjxBUyFfwmjFp1oe2jlxwImmg9HkfqFMv1DA&s" alt="Next" style="width: 100px; height 100px;"></button>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2024 Dating App</p>
+        </footer>
+    </div>
+</body>
+</html>
