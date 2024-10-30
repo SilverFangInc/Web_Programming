@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeaderBoard</title>
+    <link rel="stylesheet" href="css_Home_Profile.css">  
 </head>
- 
+
 <style> 
 h1 {
     text-align: center;
@@ -34,6 +35,13 @@ footer {
 th,td {
     border: 2px solid black;
 }
+.container {
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+}
+
 </style>
 
 <body>
@@ -103,7 +111,18 @@ th,td {
             <h2>Explore More</h2>
             <p>Check out more profiles on Pet Swipe!</p>
         </footer>
-    </table>
+    <nav>
+        <a href="Profiles.html">Home Profiles</a>
+    </nav>
+    <nav>
+        <a href="index.html">Index</a>
+    </nav>
 
+    <div class = "container">
+    <form action="submit" id = button method="post">
+        <label for = "button">Submit Your Favorite Profiles.</label>
+        <input type="submit" id="profile-card" name="card">
+    </form>
+</div>
 </body>
 </html>
