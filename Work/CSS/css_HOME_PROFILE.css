@@ -90,3 +90,42 @@ body {
     width: 100%;
   } 
   
+  h1 {
+    text-align: center;
+    background-color: #ff6b6b;
+    margin-top: 0%;
+}
+ table {
+    margin: 20px auto;
+    width: 80%;
+}
+
+body {
+    width: 100%;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    text-align: center;
+    margin-top: auto;
+    font-weight: bold;
+    background-color: #ff6b6b;
+}
+
+th,td {
+    border: 2px solid black;
+}
+.container {
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+}
+.centered-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: 11vh;
+}
