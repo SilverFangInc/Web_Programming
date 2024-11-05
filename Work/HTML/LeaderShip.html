@@ -1,90 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css_HOME_PROFILE.css">  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeaderBoard</title>
-    <link rel="stylesheet" href="css_HOME_PROFILE.css">  
+    <title>Profiles</title>
+<style>
+
+
+
+</style>
+
+
 </head>
 <body>
-    <h1 >LeaderBoard</h1>
-    <table>
-        <caption>The Absolute Cutest</caption>
-        <tr>
-           <th>Profile</th>
-           <th>Rating</th> 
-           <th>Name</th>
-           <th>Breed</th>
-           <th>Likes</th>
-           <th>Dislikes</th>
-        </tr>
-        <tr>
-            <td>Mikenna Chafin</td>
-            <td>1</td>
-            <td>Frank</td>
-            <td>Siamese</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Katherine King</td>
-            <td>2</td>
-            <td>Dawn</td>
-            <td>Border-Collie</td>
-            <td>0</td>
-            <td>0</td>
+    <div class="container">
+        <header class="header">
+            <h1>Profiles</h1>
+           
+        </header>
 
-        </tr>
-        <tr>
-            <td>Dustin Camp</td>
-            <td>3</td>
-            <td>Tibs</td>
-            <td>Pitbull</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Paige Roberts</td>
-            <td>4</td>
-            <td>Queaky</td>
-            <td>Calico</td>
-            <td>0</td>
-            <td>0</td>
+        <nav class="nav">
+            <a href="">
+                <img class="button" src="https://i.pinimg.com/736x/fb/a0/06/fba006bef8674825227b8210cb3d50f1.jpg" alt="Home" style="width: 100px; height: 100px;">
+            </a> 
+            <a href="Leadership.html">
+                <img class="button" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkabSBxAyGhJmjKnEIZchzkbtYKmOYuI2htQ&s" alt="Leadershipboard" style="width: 100px; height: 100px;">
+            </a> 
+            <a href="">
+                <img class="button" src="https://i.pinimg.com/564x/e4/f2/ea/e4f2ea3111437c52810ad405829097d2.jpg" alt="Settings" style="width: 100px; height: 100px;">
+            </a> 
+            <a href="creatProfile.html">
+                <img class="button" src="CYP.jpeg" alt="Home" style="width: 100px; height: 100px;">
+            </a> 
+        </nav>
+        
+        
+        <main>
+            
+            <div class="profile-card">
+                <img src="profile1.jpeg" alt="Profile Picture">
+                <div>
+                    <h2>Jane Doe</h2>
+                    <p>25, New York</p>
+                
+            </div>
 
-        </tr>
-        <tr>
-            <td>King Julian</td>
-            <td>5</td>
-            <td>Bubbles</td>
-            <td>Persian</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Tom Willis</td>
-            <td>6</td>
-            <td>JellyBean</td>
-            <td>Munchkin</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-    </table>
-        <footer>
-            <h2>Explore More</h2>
-            <p>Check out more profiles on Pet Swipe!</p>
-        </footer>
-    <nav>
-        <a href="Profiles.html">Home Profiles</a>
-    </nav>
-    <nav>
-        <a href="index.html">Index</a>
-    </nav>
-
-    <div class = "container">
-    <form action="submit" id = button method="post">
-        <label for = "button">Submit Your Favorite Profiles.</label>
-        <input type="submit" id="profile-card" name="card">
-    </form>
+                    <button class="buttonR">
+                        <img src="https://img.freepik.com/premium-vector/cute-pink-heart-icon-flat-vector-illustration_91515-64.jpg" alt="Like" style="width: 100px; height: 100px;">
+                    </button>
+                    <button class="buttonL">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjxBUyFfwmjFp1oe2jlxwImmg9HkfqFMv1DA&s" alt="Next" style="width: 100px; height: 100px;">
+                    </button>
 </div>
+            
+          <div class="profile-card">
+                <img src="https://images.pexels.com/photos/5472352/pexels-photo-5472352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Profile Picture">
+                <div>
+                    <h2>Giggle Dork</h2>
+                    <p>6, Amsterdam, Netherlands</p>
+                    <button class="button"><img src="https://img.freepik.com/premium-vector/cute-pink-heart-icon-flat-vector-illustration_91515-64.jpg" alt="Like" style="width: 100px; height: 100px;"></button>
+                    <button class="button"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjxBUyFfwmjFp1oe2jlxwImmg9HkfqFMv1DA&s" alt="Next" style="width: 100px; height: 100px;"></button>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2024 Don't Sue Us</p>
+        </footer>
+    </div>
 </body>
 </html>
