@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_HOME_PROFILE.css">
+    <script src = "switch.js" defer></script>
+</head>
+<style>
+    .centered {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10vh;
+        background-color: #ff6b6b;
+        border-radius: 10px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+        display: block;
+        padding-top: 10px;
+    }
+    button {
+        padding: 10px;
+        background-color: white;
+        cursor: pointer;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto 0 auto;
+    }
+
+    .centered p {
+        margin: 0;
+    }
+    #petCard {
+        display: none;
+    }
+    #user_info {
+        display: flex;
+    }
+
+</style>
+<body>
+    <a href=""></a>
+    <h1>Create Your Profile.</h1>
+    <div id="user_info" class="centered">
+        <h2>Sign Up</h2>
+
+    <label for = "email">Email:</label>
+    <input type="email" id = "password" required>
+
+    <label for = "password">Password:</label>
+    <input type="email" id = "password" required>
+
+    <label for = "email">Username:</label>
+    <input type="email" id = "password" required>
+
+    <button type="button" onclick = "showCard()">Next</button>
+
+    <h3>Password must contain</h3>
+    <p>Between 8 to 20 letters.</p>
+    <p>have one special Character.</p>
+    <p>One uppercase letter.</p>
+    </div>
+    <div id="petCard" class="centered">
+
+    <h2>Create Your petCard</h2>
+
+
+
+    <label for = "pet_Name">Pet Name:</label>
+    <input type="text" id = "pet_name" required>
+
+    <label for = "pet_age">Pet Age:</label>
+    <input type="number" id = "pet_age" required>
+
+    <label for = "pet_breed">Breed</label>
+    <input type="text" id = "pet_breed" required>
+
+    <label for = "pet_info">Description:</label>
+    <input type= "text" id = "pet_info" required>
+
+    <label for = "pet_image">Upload an Image</label>
+    <input type="file" id = "pet_image" accept="image/*" onchange= "showImage(event)" required>
+
+    <img id = "image_prev">
+
+    <button type="submit">Submit Pet Card</button>
+
+    </div>
+
+        <footer>
+            <h2>Explore More</h2>
+            <p>Check out more profiles on Pet Swipe!</p>
+        </footer>
+</body>
+</html>
