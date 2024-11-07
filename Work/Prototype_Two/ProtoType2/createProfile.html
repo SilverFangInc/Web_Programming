@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_HOME_PROFILE.css">
+    <script src = "switch.js" defer></script>
+</head>
+<style>
+    .centered {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10vh;
+        background-color: #ff6b6b;
+        border-radius: 10px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+        display: block;
+        padding-top: 10px;
+    }
+    button {
+        padding: 10px;
+        background-color: white;
+        cursor: pointer;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto 0 auto;
+    }
+
+    .errorMessage{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10vh;
+        background-color: #ff6b6b;
+        border-radius: 10px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+
+    }
+
+    .centered p {
+        margin: 0;
+    }
+    #petCard {
+        display: none;
+    }
+    #user_info {
+        display: flex;
+    }
+    .list_center {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 20px;
+        display: block;
+    }
+
+    body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+/* Header */
+  .header {
+    background-color: #ff6b6b;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+
+.header h1 {
+    margin: 0;
+  }
+
+/* Navigation */
+  .nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ff4c4c;
+    padding: 10px 0;
+  }
+
+  .nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+
+  /*.nav a:hover {
+    text-decoration: underline;
+  }*/
+
+/* Profile Cards */
+  .profile-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 15px;
+ 
+    
+    /*display: flex;
+    align-items: center;*/
+  }
+
+  .profile-card img {
+    border-radius: 100%;
+    width: 600px;
+    height: 600px;
+    margin-right: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-card h2 {
+    margin: 0;
+  }
+
+/* Buttons */
+  .buttonL{
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 90%;
+    display: inline;
+   }
+   .buttonR{
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 90%;
+    display: inline;
+   }
+
+  .button:hover {
+    background-color: #ff4c4c;
+  }
+
+/* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6b6b;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  } 
+  
+  h1 {
+    text-align: center;
+    background-color: #ff6b6b;
+    margin-top: 0%;
+}
+ table {
+    margin: 20px auto;
+    width: 80%;
+}
+
+body {
+    width: 100%;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    text-align: center;
+    margin-top: auto;
+    font-weight: bold;
+    background-color: #ff6b6b;
+}
+
+th,td {
+    border: 2px solid black;
+}
+.container {
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+}
+.centered-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: 11vh;
+}
+
+.invalid {
+    color: red;
+}
+
+.valid {
+    color: green;
+}
+
+</style>
+<body>
+    <a href=""></a>
+    <h1>Create Your Profile.</h1>
+    <nav>
+      <a href="LeaderShip.html">LeaderBoard</a>
+  </nav>
+  <nav>
+      <a href="Profiles.html">Home Profiles</a>
+  </nav>
+  <nav>
+    <a href="index.html">index</a>
+</nav>
+    <div id="user_info" class="centered">
+        <h2>Sign Up</h2>
+
+        <label for = "email">Email:</label>
+        <input type="email" id = "email" name="email" required>
+    
+        <label for = "password">Password:</label>
+        <input type="password" id = "password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+    
+        <label for = "email">Username:</label>
+        <input type="text" id = "username" name="username" required>
+
+    <button type="button" id="checkPassword">Next</button>
+    <ul class= "list_center">
+        <li id="letter" class="invalid">Password must contain a lowercase letter.</li>
+        <li id="capital" class="invalid">Password must contain an uppercase letter.</li>
+        <li id="number" class="invalid">Password must contain a number.</li>
+        <li id="length" class="invalid">Password must be at least 8 characters long.</li>
+    </ul>
+      <div id="errorMessage" style="color: red; display: none;">Password needs to follow guidelines</div>
+    </div>
+      
+
+    <!--
+    <h3>Password must contain</h3>
+    <p>Between 8 to 20 letters.</p>
+    <p>have one special Character.</p>
+    <p>One uppercase letter.</p>
+    </div>
+     --->
+
+    <div id="petCard" class="centered">
+
+    <h2>Create Your petCard</h2>
+
+
+    <label for = "pet_Name">Pet Name:</label>
+    <input type="text" id = "pet_name" required>
+
+    <label for = "pet_age">Pet Age:</label>
+    <input type="number" id = "pet_age" required>
+
+    <label for = "pet_breed">Breed</label>
+    <input type="text" id = "pet_breed" required>
+
+    <label for = "pet_info">Description:</label>
+    <input type= "text" id = "pet_info" required>
+
+    <label for = "pet_image">Upload an Image</label>
+    <input type="file" id = "pet_image" accept="image/*" onchange= "showImage(event)" required>
+
+    <img id = "image_prev">
+
+    <button type="submit">Submit Pet Card</button>
+
+    </div>
+
+        <footer>
+            <h2>Explore More</h2>
+            <p>Check out more profiles on Pet Swipe!</p>
+        </footer>
+</body>
+</html>
