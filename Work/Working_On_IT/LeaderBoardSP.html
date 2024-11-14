@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaderBoard</title>
+    <link rel="stylesheet" href="css_HOME_PROFILE.css">  
+</head>
+<body>
+    <h1 >LeaderBoard</h1>
+    <table>
+        <caption>The Absolute Cutest</caption>
+        <tr>
+           <th>Profile</th>
+           <th>Rating</th> 
+           <th>Name</th>
+           <th>Breed</th>
+           <th>Likes</th>
+           <th>Dislikes</th>
+        </tr>
+        <tr>
+            <td>Mikenna Chafin</td>
+            <td>1</td>
+            <td>Frank</td>
+            <td>Siamese</td>
+            <td id="like1">0</td>
+            <td id ="dislike1">0</td>
+            <td><button onclick="likeButton1()">Like</button></td>
+            <td><button onclick="dislikeButton1()">Dislike</button></td>
+        </tr>
+        <tr>
+            <td>Katherine King</td>
+            <td>2</td>
+            <td>Dawn</td>
+            <td>Border-Collie</td>
+            <td id="like2">0</td>
+            <td id ="dislike2">0</td>
+            <td><button onclick="likeButton2()">Like</button></td>
+            <td><button onclick="dislikeButton2()">Dislike</button></td>
+
+        </tr>
+        <tr>
+            <td>Dustin Camp</td>
+            <td>3</td>
+            <td>Tibs</td>
+            <td>Pitbull</td>
+            <td id="like3">0</td>
+            <td id ="dislike3">0</td>
+            <td><button onclick="likeButton3()">Like</button></td>
+            <td><button onclick="dislikeButton3()">Dislike</button></td>
+        </tr>
+        <tr>
+            <td>Paige Roberts</td>
+            <td>4</td>
+            <td>Queaky</td>
+            <td>Calico</td>
+            <td id="like4">0</td>
+            <td id ="dislike4">0</td>
+            <td><button onclick="likeButton4()">Like</button></td>
+            <td><button onclick="dislikeButton4()">Dislike</button></td>
+
+        </tr>
+        <tr>
+            <td>King Julian</td>
+            <td>5</td>
+            <td>Bubbles</td>
+            <td>Persian</td>
+            <td id="like5">0</td>
+            <td id ="dislike5">0</td>
+            <td><button onclick="likeButton5()">Like</button></td>
+            <td><button onclick="dislikeButton5()">Dislike</button></td>
+        </tr>
+        <tr>
+            <td>Tom Willis</td>
+            <td>6</td>
+            <td>JellyBean</td>
+            <td>Munchkin</td>
+            <td id="like6">0</td>
+            <td id ="dislike6">0</td>
+            <td><button onclick="likeButton6()">Like</button></td>
+            <td><button onclick="dislikeButton6()">Dislike</button></td>
+        </tr>
+    </table>
+    <div class="Dog_img">
+        <img src = "https://images.pexels.com/photos/9916905/pexels-photo-9916905.jpeg?auto=compress&cs=tinysrgb&w=600" width =200 height =250>
+        <p><strong>Frank</strong></p>
+    </div>
+
+    <div class="Dog_img">
+        <img src = "https://images.pexels.com/photos/13544733/pexels-photo-13544733.jpeg?auto=compress&cs=tinysrgb&w=600" width =200 height =250>
+        <p><strong>Dawn</strong></p>
+    </div>
+
+    <div class="Dog_img">
+        <img src = "https://images.pexels.com/photos/3113766/pexels-photo-3113766.jpeg?auto=compress&cs=tinysrgb&w=600" width =250 height =250>
+        <p><strong>Tibs</strong></p>
+    </div>
+
+    <div class="Dog_img">
+        <img src = "https://images.pexels.com/photos/7516098/pexels-photo-7516098.jpeg?auto=compress&cs=tinysrgb&w=600" width =270 height =250>
+        <p><strong>Queaky</strong></p>
+    </div>
+
+
+    <div class="Dog_img">
+        <img src = "https://images.pexels.com/photos/7445034/pexels-photo-7445034.jpeg?auto=compress&cs=tinysrgb&w=600" width =200 height =250>
+        <p><strong>Bubbles</strong></p>
+    </div>
+
+
+    <div class="Dog_img">
+        <img src = "https://st.depositphotos.com/1913515/3003/i/450/depositphotos_30032973-stock-photo-munchkin-kitten-outdoors.jpg" width =300 height =250>
+        <p><strong>JellyBean</strong></p>
+    </div>
+
+
+        <footer>
+            <h2>Explore More</h2>
+            <p>Check out more profiles on Pet Swipe!</p>
+        </footer>
+    <nav>
+        <a href="Profiles.html">Home Profiles</a>
+    </nav>
+    <nav>
+        <a href="index.html">Index</a>
+    </nav>
+    <nav>
+        <a href="createProfile.html">Create Profile</a>
+    </nav>
+
+    <div class = "container">
+    <form action="submit" id = button method="post">
+        <label for = "button">Submit Your Favorite Profiles.</label>
+        <input type="submit" id="profile-card" name="card">
+    </form>
+</div>
+</body>
+<script src="switch.js"></script>
+</html>
